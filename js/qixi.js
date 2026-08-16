@@ -426,7 +426,7 @@ const textList = [
 ];
 
 setTimeout(async ()=>{
-  const box = document.getElementById("letterText");
+  const box = document.querySelector(".end-text");
   box.style.display = "block";
   box.innerHTML = "";
 
