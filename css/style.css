@@ -557,3 +557,17 @@ html,body {
 	        transform: rotate(0deg) translate3d(50px, 50px, 50px);
 	    }
 	}
+.end-text {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  color: #ff6b7b;
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+  text-shadow: 0 0 12px rgba(255,90,110,0.6);
+  z-index: 99;
+  white‑space: nowrap;
+}
