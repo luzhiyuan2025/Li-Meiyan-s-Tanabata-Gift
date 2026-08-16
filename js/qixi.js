@@ -414,3 +414,26 @@ function Swipe(container,options){
 	}
 	return swipe;
 }
+// 动画总时长，掐表得到
+const totalTime = 34000;
+// 你的全部文本数组，1到520，每一条为数组里面一项
+const textList = [
+"1颗：一心一意只喜欢你",
+"2颗：成双成对永不分离",
+"3颗：三生三世钟情于你",
+// ……把你全部520条全部复制填进这里
+"520颗：万般星辰皆是于你"
+];
+
+setTimeout(async ()=>{
+  const box = document.getElementById("letterText");
+  box.style.display = "block";
+  box.innerHTML = "";
+
+  // 循环：一条一条出现，每条间隔450毫秒，可以调快慢
+  for(let i = 0; i < textList.length; i++){
+      box.innerHTML += textList[i] + "<br>";
+      // 等待
+      await new Promise(resolve=>setTimeout(resolve,450));
+  }
+}, totalTime);
